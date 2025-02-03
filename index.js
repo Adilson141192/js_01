@@ -6,7 +6,7 @@ let contador = 0;
 botaoAdicionar.addEventListener("click", (evento) => {
     evento.preventDefault();
     if (inputItem.value === "") {
-        alert("Por favor, insita um ítem!");
+        alert("Por favor, insira um item!");
         return
     }
 
@@ -22,6 +22,7 @@ botaoAdicionar.addEventListener("click", (evento) => {
     containerItemDaLista.appendChild(inputCheckbox);
     containerItemDaLista.appendChild(nomeItem);
 
-    itemDaLista.appendChild(containerItemDaLista);
-    listaDeCompras.appendChild(itemDaLista);
+    itemDaLista.appendChild(containerItemDaLista)
+    listaDeCompras.appendChild(itemDaLista)
+
 })
