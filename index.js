@@ -19,18 +19,17 @@ botaoAdicionar.addEventListener("click", (evento) => {
     const nomeItem = document.createElement("p");
     nomeItem.innerText = inputItem.value;
 
-    inputCheckbox.addEventListener("click", function() {
-        if (inputCheckbox.checked) {
+inputCheckbox.addEventListener("click", function() {
+    if (inputCheckbox.checked) {
             nomeItem.style.textDecoration = "line-through";
         } else {
-            nomeItem.style.textDecoration = "none";
+            nomeItem.style.textDecoration = "none"
         }
-    })
+    }
+)
 
     containerItemDaLista.appendChild(inputCheckbox);
     containerItemDaLista.appendChild(nomeItem);
-
-    listaDeCompras.appendChild(itemDaLista)
 
     itemDaLista.appendChild(containerItemDaLista)
 
@@ -49,4 +48,6 @@ botaoAdicionar.addEventListener("click", (evento) => {
     itemDaLista.appendChild(itemData)
 
     listaDeCompras.appendChild(itemDaLista)
+
+  
 })
