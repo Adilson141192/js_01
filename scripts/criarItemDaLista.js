@@ -31,8 +31,8 @@ inputCheckbox.addEventListener("click", function() {
     containerItemDaLista.appendChild(nomeItem);
 
     itemDaLista.appendChild(containerItemDaLista)
-    const dataCompleta = gerarDiaDaSemana();
-    
+    const dataCompleta = gerarDiaDaSemana()
+   
     const itemData = document.createElement("p");
     itemData.innerText = dataCompleta;
     itemData.classList.add("texto-data")
